@@ -1,8 +1,9 @@
 /* eslint-env mocha */
-const lib = require('prismarine-template')
+const cp = require('child_process')
+// const lib = require('mdp-copy')
 
 describe('basic', () => {
   it('test', () => {
-    console.log('it works~')
+    cp.execSync('npx mdp-copy --help', { stdio: 'inherit' })
   })
 })

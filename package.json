@@ -1,8 +1,11 @@
 {
-  "name": "prismarine-template",
-  "version": "1.0.0",
-  "description": "A template repository to make it easy to create new prismarine repo",
+  "name": "mdp-copy",
+  "version": "0.1.0",
+  "description": "LXL MDP formated prompt copier",
   "main": "src/index.js",
+  "bin": {
+    "mdp-copy": "src/cli.js"
+  },
   "scripts": {
     "test": "mocha --reporter spec --exit",
     "pretest": "npm run lint",
@@ -11,18 +14,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/extremeheat/prismarine-template.git"
+    "url": "git+https://github.com/extremeheat/mdp-copy.git"
   },
   "keywords": [],
   "author": "extremeheat",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/extremeheat/prismarine-template/issues"
+    "url": "https://github.com/extremeheat/mdp-copy/issues"
   },
-  "homepage": "https://github.com/extremeheat/prismarine-template#readme",
+  "homepage": "https://github.com/extremeheat/mdp-copy#readme",
   "devDependencies": {
-    "prismarine-template": "file:.",
-    "standard": "^17.0.0",
-    "mocha": "^10.0.0"
+    "mdp-copy": "file:.",
+    "mocha": "^10.0.0",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "basic-args": "^1.5.0",
+    "copy-paste": "^2.1.1",
+    "langxlang": "^0.8.0"
   }
 }
