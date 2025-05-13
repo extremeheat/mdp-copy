@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/extremeheat/mdp-copy/actions/workflows/ci.yml/badge.svg)](https://github.com/extremeheat/mdp-copy/actions/workflows/)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/extremeheat/mdp-copy)
 
-CLI tool for loading and parsing LXL MDP formatted prompt files.
+CLI tool for loading and parsing LXL MDP formatted prompt files. Node 24+ required.
 
 ## Install
 ```
