@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs')
-const { copy } = require('copy-paste')
+const clipboard = require('clipboardy').default
 const args = require('basic-args')({
   name: 'mdp-copy',
   version: require('../package.json').version,
@@ -36,13 +36,14 @@ function readFile (file) {
 }
 
 function tryCopy (str) {
-  copy(str, (err) => {
-    if (err) {
-      console.error('Error copying to clipboard:', err)
-    } else {
-      console.log('Copied to clipboard.')
-    }
-  })
+  try {
+    clipboard.writeSync(str)
+    console.log('Copied to clipboard')
+  } catch (e) {
+    console.warn('***Failed to copy:', e.message)
+    fs.writeFileSync('clip.txt', str)
+    console.log('Wrote to clip.txt instead')
+  }
 }
 
 if (typeof loaded === 'string') {
