@@ -25,7 +25,7 @@
   "homepage": "https://github.com/extremeheat/mdp-copy#readme",
   "devDependencies": {
     "mdp-copy": "file:.",
-    "mocha": "^10.0.0",
+    "mocha": "^11.5.0",
     "standard": "^17.0.0"
   },
   "dependencies": {
